@@ -272,6 +272,120 @@ body{
 			z-index: 300;
 		}
 
+.wrapper_methodologyWorks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
 
+.wrap_methodologyWorks {
+    width: 90%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_methodologyWorks hr {
+    width: 100%;
+    background: #141414;
+    margin: 50px 0;
+    height: 1px;
+    border: none;
+}
+
+.titText_methodologyWorks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}.titText_methodologyWorks :first-child{
+    width: 50%;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+}.titText_methodologyWorks :last-child{
+    width: 45%;
+    font-family: PT Sans;
+    color: #bebebe;
+    font-size: .92em;
+    line-height: 22px;
+}
+
+.jobs_methodologyWorks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.job_methodologyWorks {
+    width: calc( 83% / 3 );
+    padding: 20px;
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, .1);
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: PT Sans;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+}
+.job_methodologyWorks :nth-child(1) {
+    font-style: italic;
+}
+.job_methodologyWorks :nth-child(2) {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+
+/*пагинаторы еже*/
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #aaaaaa;
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    background: #141414;
+}
+
+#fp-nav ul li a.active span:before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+/*________*/
+
+@media only screen  and (max-width: 1280px) {
+    body {
+        font-size: .9em;
+    }
+    .job_methodologyWorks {
+        width: calc(80% / 3);
+    }
+}
 
 
