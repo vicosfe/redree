@@ -332,7 +332,7 @@ body{
 }
 
 .job_methodologyWorks {
-    width: calc( 83% / 3 );
+    width: calc(90% / 3 );
     padding: 20px;
     box-shadow: 1px 1px 35px rgba(0, 0, 0, .1);
     background: #fff;
@@ -379,13 +379,13 @@ body{
 
 /*________*/
 
-@media only screen  and (max-width: 1280px) {
+/*@media only screen  and (max-width: 1280px) {
     body {
         font-size: .9em;
     }
     .job_methodologyWorks {
         width: calc(80% / 3);
     }
-}
+}*/
 
 
