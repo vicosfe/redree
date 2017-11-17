@@ -362,7 +362,7 @@ body{
 }
 
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
-    background: #141414;
+    background: #141414 !important;
 }
 
 #fp-nav ul li a.active span:before {
