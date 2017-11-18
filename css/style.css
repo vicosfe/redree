@@ -393,7 +393,7 @@ body{
     align-items: center;
     background: #fff;
     z-index: 105;
-    position: absolute;
+    position: relative;
     transition: opacity 1.1s, transform 0s 1.3s;
 }
 
@@ -410,9 +410,11 @@ body{
 
 .wrap_preloader img {
     opacity: 0;
-    position: relative;
+    position: absolute;
+    top: 50%;
     transition: .9s;
-    left: -3%;
+    left: 46%;
+    transform: translate(-50%, -50%);
     z-index: 107;
 }
 
