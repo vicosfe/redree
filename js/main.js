@@ -1,4 +1,4 @@
-$(document).ready(function () {
+ $(document).ready(function () {
 	var mainMenu = $(".mainMenu");
 	$(mainMenu).hide();
 	var menuPhone = $(".header__right--number");
@@ -7,6 +7,9 @@ $(document).ready(function () {
 			navigation: true
 		});
 	});
+
+	var fullpage1 = $("#fullpage");
+	$(fullpage1).show();
 
 	// Гамбургер еже
 	(function() {
@@ -54,13 +57,42 @@ $(document).ready(function () {
 
 	var darkCheck = $(".darkCheck");
 
-
-
-
-
-
-
-
-
 // doc.end
+});
+
+
+
+// govnocod zaura
+//Прелоадер еже
+window.onload = function(){
+    setTimeout(function(){
+        $(".wrap_preloader img").css({
+            opacity: "1",
+        });
+    },2300);
+    
+        $(".svg_preloader").toggleClass("svg_preloaderJS");
+};
+
+	$(function () {
+		$({numberValue: 0}).animate({numberValue: 100}, {
+			duration: 1900,
+			easing: "linear",
+			step: function(val) {
+				$(".count_preloader").html(Math.ceil(val));
+			}
+		});
+        
+    setTimeout(function(){
+        $(".wrapper_preloader").css({
+            opacity: "0",
+        });
+    },2750);
+        
+    setTimeout(function(){
+        $(".wrapper_preloader").css({
+            display: "none",
+        });
+    },3950);
+        
 });
