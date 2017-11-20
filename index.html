@@ -7,31 +7,33 @@
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.fullpage.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
-     <script
-		  src="https://code.jquery.com/jquery-3.2.1.js"
-		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		  crossorigin="anonymous">
-    </script>
-	<script src="js/jquery.easings.min.js"></script>
-	<script src="js/scrolloverflow.min.js"></script>
-	<script src="js/jquery.fullpage.min.js"></script>
-	<script src="js/main.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous">
+</script>
+<script src="js/jquery.easings.min.js"></script>
+<script src="js/scrolloverflow.min.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </head>
 <body>
-	<!-- ******************************************************************************************* -->
+
 
 
 	<!-- fucking preloader -->
-	    <div class="wrapper_preloader">
-	        <div class="wrap_preloader">
-	            <svg width="134" height="100" class="svg_preloader">
-	             <circle r="35" cx="36" cy="50" stroke="#ff4747" stroke-width="2" />
-	             <img src="images/logo.png" alt="">
-	            </svg>
-	        </div>
-	        <div class="count_preloader">0</div> 
-	    </div>
+	<div class="wrapper_preloader">
+		<div class="wrap_preloader">
+			<svg width="100" height="100" class="svg_preloader">
+				<circle r="35" cx="36" cy="50" stroke="#ff4747" stroke-width="2" />
+				<img src="images/logo.png" alt="">
+			</svg>
+		</div>
+		<div class="count_preloader">0</div> 
+	</div>
 	<!-- end fucking preloader -->  
 
 	<div class="wrapper_preloader">
@@ -49,7 +51,7 @@
 	
 	<!-- ******************************************************************************************* -->
 
-	<div id="header">
+	<div id="header" class="paddingBlock">
 		<div class="mainMenu">
 			<div class="mainMenuWrapp">
 				<nav>
@@ -77,50 +79,30 @@
 		</div>
 		
 	</div>
-	<div id="footer">Footer</div>
+	
 
 
 	<div id="fullpage">
-		<div class="section darkCheck">Some section</div>
-		<div class="section" style="background-color: #000;">Some section</div>
-		<div class="section">
-<<<<<<< HEAD
-			 <div class="wrapper_methodologyWorks">
-                <div class="wrap_methodologyWorks">
-                    <div class="titText_methodologyWorks">
-                        <p>Методология работы<br>над проектом</p>
-                        <p>Создание проекта происходит в несколько этапов в соответствии с заверенным заранее планом, начиная от составления общего макета, заканчивая сдачей работ заказчику. В любой момент времени заказчик может проследить на каком этапе разработки сейчас находится его проект.</p>
-                    </div>
-                    <hr>
-                    <!--___________________________________________________________-->
-                    
-                    <div class="jobs_methodologyWorks">
-                        <div class="job_methodologyWorks">
-                            <p>01</p>
-                            <p>Исследование</p>
-                            <p>Исследование - процесс формирования перечня функциональных особенностей и подсчёта ориентировочного срока разработки продукта. Также будет созданы: карта приложения и примерная структура будущей системы.</p>
-                        </div>
-                        <div class="job_methodologyWorks">
-                            <p>02</p>
-                            <p>Проектирование</p>
-                            <p>Завершающий этап продукта - документ о решениях и правилах, включающий в себя несколько пунктов, таких как: информационную архитектуру, дизайн взаимодействия, визуальную концепцию сетки, элементы визуальных решений, ТЗ для разработчиков.</p>
-                        </div>
-                        <div class="job_methodologyWorks">
-                            <p>03</p>
-                            <p>Производство</p>
-                            <p>Это этап завершения работ и подведения итогов, исправления ошибок, исправление деталей и доработку важных компонентов. 
-                            По окончанию данного этапа и согласования товара заказчиком происходит запуск самого продукта..</p>
-                        </div>
-                </div>
-                
-                <!--___________________________________________________________-->
-            </div>
-            
-          </div>
+	<div class="bla paddingBlock"></div>
+		<div class="section darkCheck">
+			<div class="owl-carousel owl-theme">
+					<div class="item" style="background-image: url(images/slide1.png);">
+						<div class="item__wrapper">
+							<h3>Информационный портал</h3>
+							<h1>ИНВЕСТИЦИОННЫЙ ПОРТАЛ МАХАЧКАЛЫ</h1>
+							<a href="#">ПОСМОТЕРТЬ ПОДРОБНЕЕ</a>
+						</div>
+					</div>
+					<div class="item"><h4>2</h4></div>
+					<div class="item"><h4>3</h4></div>
+					
+					
+				</div>
+			
 		</div>
+		<div class="section">Some section</div>
 		<div class="section">
-		
-=======
+
 			<div class="wrapper_methodologyWorks">
 				<div class="wrap_methodologyWorks">
 					<div class="titText_methodologyWorks">
@@ -129,7 +111,7 @@
 					</div>
 					<hr>
 					<!--___________________________________________________________-->
-					
+
 					<div class="jobs_methodologyWorks">
 						<div class="job_methodologyWorks">
 							<p>01</p>
@@ -148,57 +130,61 @@
 								По окончанию данного этапа и согласования товара заказчиком происходит запуск самого продукта..</p>
 							</div>
 						</div>
-						
+
 						<!--___________________________________________________________-->
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="section">
-				так, тебе больше не кидал Расул ниче? только ту хуйню и прелоадер  хпурелоадер будешь делать? или ту хйню хочешь? мне пох  мне тоже, но та хуйня меня бесит ,о кн,делай прелоадер а та хуйня какая?  с верт скроллингом? дагов нсо кинебшь макет ,он мне не кинул ок я еще глав не добитл та,м  слайдер надор на фон пизхгуитьпиздец помочь?? а стоп, что за косяк нашще? у емня
+
+
 			</div>
->>>>>>> mm
+			<div class="section">
+
+			</div>
+
 		</div>
 
-<<<<<<< HEAD
-</body>
-</html> 
-=======
 
-		<script>
-			var svg_preloader = $(".svg_preloader");
-			setTimeout(function(){
-				$(".wrap_preloader img").css({
-					opacity: "1",
-				});
-			},2300);
-			
-			$(svg_preloader).toggleClass('svg_preloaderJS');
-
-
-			$(function () {
-				$({numberValue: 0}).animate({numberValue: 100}, {
-					duration: 1900,
-					easing: "linear",
-					step: function(val) {
-						$(".count_preloader").html(Math.ceil(val));
-					}
-				});
-				
-				setTimeout(function(){
-					$(".wrapper_preloader").css({
-						opacity: "0",
-					});
-				},2750);
-				
-				setTimeout(function(){
-					$(".wrapper_preloader").css({
-						display: "none",
-					});
-				},3850);
-				
-			});
-		</script>
 	</body>
 	</html> 
->>>>>>> mm
+
+
+	<script>
+		var svg_preloader = $(".svg_preloader");
+		setTimeout(function(){
+			$(".wrap_preloader img").css({
+				opacity: "1",
+			});
+		},2300);
+
+		$(svg_preloader).toggleClass('svg_preloaderJS');
+
+
+		$(function () {
+			$({numberValue: 0}).animate({numberValue: 100}, {
+				duration: 1900,
+				easing: "linear",
+				step: function(val) {
+					$(".count_preloader").html(Math.ceil(val));
+				}
+			});
+
+			setTimeout(function(){
+				$(".wrapper_preloader").css({
+					opacity: "0",
+				});
+			},2750);
+
+			setTimeout(function(){
+				$(".wrapper_preloader").css({
+					display: "none",
+				});
+			},3850);
+
+		});
+	</script>
+</body>
+</html> 
+

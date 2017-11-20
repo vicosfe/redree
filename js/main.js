@@ -8,6 +8,17 @@
 		});
 	});
 
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dotsContainer: '.bla',
+    // nav:true,
+    dots: true,
+    pagination : true,
+    items : 1,
+    animateOut: 'fadeOut'
+});
+
 	var fullpage1 = $("#fullpage");
 	$(fullpage1).show();
 
@@ -57,23 +68,6 @@
 
 	var darkCheck = $(".darkCheck");
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-// ******************************
-
-
-
-
->>>>>>> mm
-// doc.end
-});
-
 
 
 // govnocod zaura
@@ -107,6 +101,22 @@ window.onload = function(){
         $(".wrapper_preloader").css({
             display: "none",
         });
-    },4000);
+    },3950);
         
 });
+
+
+
+
+// ******************************
+
+
+
+
+
+// doc.end
+});
+
+
+
+
