@@ -107,6 +107,6 @@ window.onload = function(){
         $(".wrapper_preloader").css({
             display: "none",
         });
-    },3950);
+    },4000);
         
 });
