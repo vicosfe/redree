@@ -34,18 +34,7 @@
 		</div>
 		<div class="count_preloader">0</div> 
 	</div>
-	<!-- end fucking preloader -->  
-
-	<div class="wrapper_preloader">
-		<div class="wrap_preloader">
-			<svg width="100" height="100" class="svg_preloader">
-				<circle r="35" cx="36" cy="50" stroke="#ff4747" stroke-width="2" />
-				<img src="images/logo.png" alt="">
-			</svg>
-		</div>
-		<div class="count_preloader">0</div> 
-	</div>
-	
+	<!-- end fucking preloader -->  	
 
 
 	
@@ -136,8 +125,41 @@
 
 				</div>
 			</div>
+			
 			<div class="section">
-
+                <div class="wrapper_formContact">
+                    <div class="map_formContactLeft">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1460.0556955710906!2d47.50604382515599!3d42.95485697630433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea11f226e0b57%3A0x66b0c2ca5e0f2ea6!2z0YPQuy4g0JPQsNCz0LDRgNC40L3QsCwgNzYsINCc0LDRhdCw0YfQutCw0LvQsCwg0KDQtdGB0L8uINCU0LDQs9C10YHRgtCw0L0sIDM2NzAxMA!5e0!3m2!1sru!2sru!4v1511192776706" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="form_formContactRight">
+                        <div class="titleText_formContact">
+                            <h1>Контакты</h1>
+                            <h5 class="p_bold">В любое время суток вы можете связаться с нами, мы вас проконсультируем и ответим<br>на любые ваши вопросы.</h5>
+                            <div class="link_titleText_formContact">
+                                <div>
+                                    <p>+7 963 403 14 05</p>
+                                    <a href="#">feedback@redree.ru</a>
+                                </div>
+                                <div>
+                                    <a href="#">Вконтакте</a>
+                                    <a href="#">Фейсбук</a>
+                                </div>
+                            </div>
+                            <p class="p_bold">Оставьте заявку и мы свяжемся<br>с Вами в ближайщее время.</p>
+                            <form action="#">
+                                <div>
+                                    <input type="text" placeholder="Имя" required>
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Телефон" required>
+                                    <button>Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
 			</div>
 			<div class="section">
@@ -149,42 +171,7 @@
 
 	</body>
 	</html> 
-
-
-	<script>
-		var svg_preloader = $(".svg_preloader");
-		setTimeout(function(){
-			$(".wrap_preloader img").css({
-				opacity: "1",
-			});
-		},2300);
-
-		$(svg_preloader).toggleClass('svg_preloaderJS');
-
-
-		$(function () {
-			$({numberValue: 0}).animate({numberValue: 100}, {
-				duration: 1900,
-				easing: "linear",
-				step: function(val) {
-					$(".count_preloader").html(Math.ceil(val));
-				}
-			});
-
-			setTimeout(function(){
-				$(".wrapper_preloader").css({
-					opacity: "0",
-				});
-			},2750);
-
-			setTimeout(function(){
-				$(".wrapper_preloader").css({
-					display: "none",
-				});
-			},3850);
-
-		});
-	</script>
+	
 </body>
 </html> 
 
