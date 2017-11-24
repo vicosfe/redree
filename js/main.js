@@ -4,7 +4,8 @@
 	var menuPhone = $(".header__right--number");
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
-			navigation: true
+			navigation: true,
+            normalScrollElements: '.scroll_block_OurWorks',
 		});
 	});
 
@@ -67,6 +68,8 @@
 
 
 	var darkCheck = $(".darkCheck");
+     
+     
 
 
 
@@ -106,10 +109,14 @@
 		});
 
 
-
-
 // ******************************
 
+if ($(".scroll_block_OurWorks").scrollTop() < 10) {
+    $('.job_OurWorks').toggleClass(".tesssst");
+} else {
+    $('.job_OurWorks img').show();                        
+}
+     
 
 
 
