@@ -111,14 +111,6 @@
 
 // ******************************
 
-if ($(".scroll_block_OurWorks").scrollTop() < 10) {
-    $('.job_OurWorks').toggleClass(".tesssst");
-} else {
-    $('.job_OurWorks img').show();                        
-}
-     
-
-
 
 
 // doc.end

@@ -601,13 +601,13 @@ body{
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
-    width: 70%;
+    width: 84%;
 }
 
 .scroll_block_OurWorks {
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 200px  25px 25px 25px;
+    padding: 210px  25px 25px 25px;
     height: 100vh;
     display: -webkit-flex;
     display: -moz-flex;
@@ -618,12 +618,23 @@ body{
     position: relative;
 }.scroll_block_OurWorks::-webkit-scrollbar { width: 0; }
 
+.hide_OurWorks {
+    width: 50%;
+    background: #fff;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .job_OurWorks {
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     margin-bottom: 30px;
+    transition: .3s;
 }.job_OurWorks:last-child {
     margin-bottom: 0;
 }
@@ -635,7 +646,59 @@ body{
 .info_block_OurWorks {
     position: relative;
     top: 25%;
+    width: 50%;
+    background: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
 }
+
+.info_block_OurWorks h1 {
+    font-family: PT Sans;
+    text-transform: uppercase;
+    color: #141414;
+}
+
+.infojob_OurWorks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28%;
+}
+
+.infojob_OurWorks h3{
+    color: #141414;
+    margin: 40px 0 15px 0;
+}
+.infojob_OurWorks p, .infojob_OurWorks a{
+    color: #bebebe;
+    font-family: Fira Sans;
+    font-weight: 400;
+}
+.infojob_OurWorks a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 15px;
+    transition: .3s;
+}.infojob_OurWorks a:hover{color: #141414;}
+
+.infojob_OurWorks span {
+    margin-left: 15px;
+}
+
+
+
+
+
+
 
 /*end fucking Our Works*/
 
