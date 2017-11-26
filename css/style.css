@@ -427,7 +427,7 @@ body{
     opacity: 0;
     position: absolute;
     transition: .9s;
-    left: 46%;
+    left: 50.2%;
     z-index: 107;
     transform: translate(-50%, -50%);
 }
@@ -435,7 +435,7 @@ body{
 .svg_preloader {
     position: absolute;
     top: 50%;
-    left: 49%;
+    left: 52.2%;
     transform: translate(-50%, -50%);
     stroke-dasharray: 0% 330%;
     fill: transparent;  
@@ -446,7 +446,7 @@ body{
     fill:#ff4747;
     transition: stroke-dasharray 1.7s linear, fill .5s 1.7s linear, left .7s 1.8s;
     z-index: 107;
-    left: 46%;
+    left: 50.2%;
 }
 
 .count_preloader {
