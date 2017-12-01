@@ -5,7 +5,7 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			navigation: true,
-            normalScrollElements: '.scroll_block_OurWorks',
+            normalScrollElements: '.scroll_block_OurWorks, .itemsScroll_Studia',
 		});
 	});
 
@@ -107,9 +107,37 @@
 			},3850);
 
 		});
+     
+     $(".AddWorker_Studia").click(function() {
+         $(".wrapForm_Studia").toggleClass("wrapForm_StudiaJS");
+         $(".AddWorker_Studia img").toggleClass("AddWorker_StudiaJS");
+         $(".wraper_Form_Studia").toggleClass("wraper_Form_StudiaJS");
+     });
 
 
 // ******************************
+     
+     
+//	$("#contactForm").submit(function() {
+//		$.ajax({
+//			type: "POST",
+//			url: "telegram.php",
+//			data: $(this).serialize()
+//		}).done(function() {
+//			$(this).find("input").val("");
+//            $(".wrapper_formContact").toggleClass("test");
+//		});
+//		return false;
+//	});
+     
+     
+//     $("#contactForm button").click(function(){
+//         $("#contactForm").css({
+//             display: "none"
+//         });
+//         $(".formJsShow").html("Заявка успешно отправлена.");
+//         $(".formJsShow").toggleClass("formJshide");
+//     });
 
 
 

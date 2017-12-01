@@ -1,7 +1,8 @@
 *, *::before, *::after{
 	box-sizing: border-box;
-    margin: 0;
-    text-decoration: none;
+	margin: 0;
+	text-decoration: none;
+	 letter-spacing: .2px; 
 }
 img{
 	max-width: 100%;
@@ -542,7 +543,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100px;
+    height: 110px;
 }
 
 .titleText_formContact form input:first-child {
@@ -694,19 +695,373 @@ body{
     margin-left: 15px;
 }
 
-
-
-
-
-
-
 /*end fucking Our Works*/
 
-.owl-dot span{
-	height: 20px;
-	width: 20px;
-	background-color: red;
+
+
+/*fucking job*/
+
+.wrapper_widthAbsolute {
+    width: 80%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
 }
+
+.wrapper_widthAbsolute h1 {text-transform: uppercase;}
+
+.wrapper_logo_WorkPage, .wrapper_infojob_WorkPage, .wrapper_Tasks_WorkPage {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_infojob_WorkPage {
+    background: #ff4747;
+    color: #fff;
+}
+
+.InfoJob_WorkPage {
+    height: 58%;
+    justify-content: space-between;
+}
+
+.blockOne_InfoJob_WorkPage {
+    font-family: PT Sans;
+    font-weight: bold;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.blockOne_InfoJob_WorkPage div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}.blockOne_InfoJob_WorkPage div p:first-child {
+    margin-bottom: 20px;
+}.blockOne_InfoJob_WorkPage div p:last-child {
+    margin-bottom: 0;
+}
+.blockOne_InfoJob_WorkPage div p:not(:first-child) {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.blockTwo_InfoJob_WorkPage {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    font-family: PT Sans;
+    font-weight: bold;
+}
+.blockTwo_InfoJob_WorkPage p:not(:first-child) {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.blockTwo_InfoJob_WorkPage span {
+    font-family: PT Sans;
+    font-weight: 400;
+}
+.blockTwo_InfoJob_WorkPage p:first-child {
+    margin-bottom: 20px;
+}
+
+.InfoJob_WorkPage a {
+    color: #fff;
+    font-family: PT Sans;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: .9em;
+    width: max-content;
+    transition: .3s;
+}.InfoJob_WorkPage a:hover{color: #141414;}
+
+.task_WorkPage p:not(:last-child){
+    margin-bottom: 30px;
+}
+.task_WorkPage {
+    font-family: PT Sans;
+    line-height: 35px;
+    color: #141414;
+}
+.task_WorkPage h1{
+    margin-bottom: 55px;
+}
+
+.lastTextInfo_WorkPage{
+    font-family: PT Sans;
+    line-height: 35px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    color: #141414;
+}.lastTextInfo_WorkPage p, .task_WorkPage p {width: 75%;letter-spacing: .1px;}
+
+.wrapper_footer_WorkPage {
+    height: 200px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_WorkPage {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}.footer_WorkPage a {color: #141414;font-family: PT Sans;font-weight: bold;transition: .3s;}
+.footer_WorkPage a:hover{text-decoration: underline;}
+
+/*end fucking job*/
+
+
+
+/*fucking studia*/
+.wrapper_items_Studia {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.itemLeft_Studia {
+    width: 50%;
+    height: 100vh;
+    background-image: url(../images/MainStudia_bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.wraper_Form_Studia {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    transition: .5s;
+}.wraper_Form_StudiaJS {
+    background: rgba(21, 21, 21, .95);
+}
+
+.wrapForm_Studia {
+    width: 80%;
+    position: relative;
+    left: -7%;
+    z-index: -1;
+    opacity: 0;
+    transition: left .7s, opacity .5s, z-index .7s;
+}
+
+.wrapForm_StudiaJS {
+    z-index: 1;
+    left: 0;
+    opacity: 1;
+}
+
+.wrapForm_Studia h1{
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+#form_Studia input, #form_Studia textarea, #form_Studia button{
+    background: rgba(21, 21, 21, 0);
+    outline: 0;
+    resize: none;
+    color: #fff;
+    padding: 11px 20px;
+    border: 1px solid #fff;
+    font-family: Fira Sans;
+    font-weight: 500;
+}
+
+#form_Studia input::placeholder, #form_Studia textarea::placeholder {
+    color: #fff;
+    transition: .25s;
+}
+
+#form_Studia input:focus::placeholder, #form_Studia textarea:focus::placeholder {
+    opacity: .75;
+}
+
+#form_Studia button{
+    cursor: pointer;
+    transition: .25s; 
+}#form_Studia button:hover{
+    background: #fff;
+    color: rgba(21, 21, 21, 1);
+}
+
+#form_Studia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+}
+
+#form_Studia textarea {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 130px;
+}
+
+.itemRight_Studia {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.TitleText_itemRight_Studia {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 25%;
+    width: 82%;
+    color: #141414;
+}
+
+.itemsScroll_Studia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 35vh;
+    width: fit-content;
+}
+
+.TitleText_itemRight_Studia p{
+    color: #bebebe;
+    line-height: 25px;
+    width: 80%;
+}
+
+.TitleText_itemRight_Studia h1 {
+    margin-bottom: 30px;
+}
+
+.TitleText_itemRight_Studia h2 {
+    margin: 30px 0;
+}
+
+.item_Studia {
+    position: relative;
+}
+
+.PostWorker_Studia {
+    background: #fff;
+    position: relative;
+    top: -4px;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.PostWorker_Studia p {
+    color: #141414;
+    width: fit-content;
+    position: relative;
+    left: 20px;
+}
+
+.PostWorker_Studia :last-child {
+    font-family: PT Sans;
+    font-weight: 400;
+}
+
+.AddWorker_Studia {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: PT Sans;
+    font-weight: 700;
+    height: inherit;
+    cursor: pointer;
+    background: #fff;
+}
+
+.AddWorker_StudiaJS {
+    transform: rotate(40deg);
+}.AddWorker_Studia img {
+    transition: .6s;
+}
+
+.AddWorker_Studia p{
+    text-align: center;
+    margin-top: 30px;
+    transition: .6s;
+    position: relative;
+}
+
+.itemsScroll_Studia::-webkit-scrollbar { width: 0; }
+
+.section_Studia {
+    background: #fafafa;
+    overflow: hidden;
+}
+
+/*end fucking studia*/
 
 
 /* ************************************************************************ */
@@ -767,5 +1122,9 @@ body{
 /* END OWL */
 /* ************************************************************************ */
 
-
+/*бля, Витя, заебал, не трогай*/
+@media only screen  and (max-width: 1280px) {
+    body {
+        font-size: .9em;
+}
 
