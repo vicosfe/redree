@@ -348,6 +348,7 @@ body{
 
 .jobs_methodologyWorks p{
     margin: 10px 0;
+    word-wrap: break-word;
 }
 
 .job_methodologyWorks {
@@ -937,7 +938,7 @@ body{
 
 #form_Studia {
     display: grid;
-    grid-template-columns: repeat(3, 1fr );
+    grid-template-columns: repeat(3, 30% );
     grid-column-gap: 20px;
     grid-row-gap: 15px;
 }
@@ -969,17 +970,17 @@ body{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    top: 25%;
+    padding-top: 25%;
     width: 82%;
     color: #141414;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .itemsScroll_Studia {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-    overflow-y: scroll;
-    overflow-x: hidden;
     height: 35vh;
     width: fit-content;
 }
@@ -1054,7 +1055,7 @@ body{
     position: relative;
 }
 
-.itemsScroll_Studia::-webkit-scrollbar { width: 0; }
+.TitleText_itemRight_Studia::-webkit-scrollbar { width: 0; }
 
 .section_Studia {
     background: #fafafa;

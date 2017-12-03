@@ -5,7 +5,7 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			navigation: true,
-            normalScrollElements: '.scroll_block_OurWorks, .itemsScroll_Studia',
+            normalScrollElements: '.scroll_block_OurWorks, .TitleText_itemRight_Studia',
 		});
 	});
 
