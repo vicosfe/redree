@@ -606,10 +606,10 @@ body{
     width: 84%;
 }
 
-.scroll_block_OurWorks {
+.scroll_block_OurWorks, .tesst {
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 210px  25px 25px 25px;
+    padding: 200px 25px 25px 25px;
     height: 100vh;
     display: -webkit-flex;
     display: -moz-flex;
@@ -647,7 +647,7 @@ body{
 
 .info_block_OurWorks {
     position: relative;
-    top: 25%;
+    top: 200px;
     width: 50%;
     background: #fff;
     display: -webkit-flex;
@@ -663,6 +663,7 @@ body{
     font-family: PT Sans;
     text-transform: uppercase;
     color: #141414;
+    line-height: 24px;
 }
 
 .infojob_OurWorks {
@@ -999,14 +1000,23 @@ body{
     margin: 30px 0;
 }
 
+.space_Studia {
+    height: 70px;
+}
+
 .item_Studia {
     position: relative;
-}
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}.item_Studia img {width: 100%;}
 
 .PostWorker_Studia {
     background: #fff;
     position: relative;
-    top: -4px;
     display: flex;
     flex-direction: column;
     height: 80px;
@@ -1040,10 +1050,11 @@ body{
     height: inherit;
     cursor: pointer;
     background: #fff;
+    height: initial;
 }
 
 .AddWorker_StudiaJS {
-    transform: rotate(40deg);
+    transform: rotate(45deg);
 }.AddWorker_Studia img {
     transition: .6s;
 }
@@ -1064,6 +1075,94 @@ body{
 
 /*end fucking studia*/
 
+
+/*fucking error page*/
+.wrapper_404Page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/404_bg.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap_404Page {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+}
+
+.linkHome_404Page a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Fira Sans";
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    text-transform: uppercase;
+}.linkHome_404Page a:hover {background: #fff;color: #000;}
+
+.linkHome_404Page {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    width: 64%;
+    justify-content: space-between;
+    margin-left: 170px;
+}
+
+.linkHome_404Page div:first-child {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.linkHome_404Page div:first-child p {
+    font-family: PT Sans;
+    font-size: 3em;
+}.linkHome_404Page div:first-child span {
+    color: #c13828;
+    font-family: PT Sans;
+    font-weight: 700;
+}
+
+.linkHome_404Page div p:last-child{
+    font-family: Fira Sans;
+    font-size: 1.1em;
+    letter-spacing: .3px;
+}.linkHome_404Page div:last-child p:first-child{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 10em;
+}
+
+/*end fucking error page*/
 
 /* ************************************************************************ */
 
@@ -1127,5 +1226,8 @@ body{
 @media only screen  and (max-width: 1280px) {
     body {
         font-size: .9em;
+    }
+    .linkHome_404Page {
+        width: 74%;
+    }
 }
-

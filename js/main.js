@@ -113,8 +113,8 @@
          $(".AddWorker_Studia img").toggleClass("AddWorker_StudiaJS");
          $(".wraper_Form_Studia").toggleClass("wraper_Form_StudiaJS");
      });
-
-
+    
+     
 // ******************************
      
      
