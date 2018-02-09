@@ -178,8 +178,8 @@
 				</div>
 				<div>
 					<p>Мы в соц.сетях:</p>
-					<a href="">Вконтакте</a>
-					<a href="">Инстаграм</a>
+					<a target="https://vk.com/redree_digital" href="https://vk.com/redree_digital">Вконтакте</a>
+					<a target="https://www.instagram.com/redree_digital/" href="https://www.instagram.com/redree_digital/">Инстаграм</a>
 				</div>
 			</div>
 		</div>

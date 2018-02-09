@@ -20,19 +20,22 @@
 		<div class="tabs">
 
 			<ul class="tabs__caption">
-				<li @if($id == 1) class="active" @endif>Промо-сайт</li>
-				<li @if($id == 2) class="active" @endif>Корпоративный сайт</li>
-				<li @if($id == 3) class="active" @endif>Сервис</li>
-				<li @if($id == 4) class="active" @endif>Интернет-магазин</li>
-				<li @if($id == 5) class="active" @endif>Мобильные приложения</li>
-				<li @if($id == 6) class="active" @endif>Брендинг</li>
+
+				<div class="owl-carousel slideTabs">
+					<li @if($id == 1) class="activeLi" @endif>Промо-сайт</li>
+					<li @if($id == 2) class="activeLi" @endif>Корпоративный сайт</li>
+					<li @if($id == 3) class="activeLi" @endif>Сервис</li>
+					<li @if($id == 4) class="activeLi" @endif>Интернет-магазин</li>
+					<li @if($id == 5) class="activeLi" @endif>Мобильные приложения</li>
+					<li @if($id == 6) class="activeLi" @endif>Брендинг</li>
+				</div>				
 				<hr>
+
 			</ul>
-			<div class="prevTabs"></div>
-			<div class="nextTabs"></div>
+
 			<div class="lineTabsCaption"></div>
 			<!-- Tab content -->
-			<div class="tabs__content @if($id == 1) active @endif">
+			<div class="tabs__content @if($id == 1) activeLi @endif">
 
 				<form action="/services/add/1" method="post" class="formWrapper" id="form_PageCountPrice" enctype="multipart/form-data" autocomplete="off">
 
@@ -113,35 +116,35 @@
 					</div>
 				</form>
 			</div>
-			<div class="tabs__content @if($id == 2) active @endif">
+			<div class="tabs__content @if($id == 2) activeLi @endif">
 				<div class="wrap_noneBlock">
 					<h1>
 						Страница находится на стадии разработки. <br>Просим у наших многочисленных посетителей прощения.
 					</h1>
 				</div>
 			</div>
-			<div class="tabs__content @if($id == 3) active @endif">
+			<div class="tabs__content @if($id == 3) activeLi @endif">
 				<div class="wrap_noneBlock">
 					<h1>
 						Страница находится на стадии разработки. <br>Просим у наших многочисленных посетителей прощения.
 					</h1>
 				</div>
 			</div>
-			<div class="tabs__content @if($id == 4) active @endif">
+			<div class="tabs__content @if($id == 4) activeLi @endif">
 				<div class="wrap_noneBlock">
 					<h1>
 						Страница находится на стадии разработки. <br>Просим у наших многочисленных посетителей прощения.
 					</h1>
 				</div>
 			</div>
-			<div class="tabs__content @if($id == 5) active @endif">
+			<div class="tabs__content @if($id == 5) activeLi @endif">
 				<div class="wrap_noneBlock">
 					<h1>
 						Страница находится на стадии разработки. <br>Просим у наших многочисленных посетителей прощения.
 					</h1>
 				</div>
 			</div>
-			<div class="tabs__content @if($id == 6) active @endif">
+			<div class="tabs__content @if($id == 6) activeLi @endif">
 				<div class="wrap_noneBlock">
 					<h1>
 						Страница находится на стадии разработки. <br>Просим у наших многочисленных посетителей прощения.

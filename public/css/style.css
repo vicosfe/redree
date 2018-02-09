@@ -33,6 +33,10 @@ body {
 	position: relative;
 }
 
+.menuActivePadBlock {
+	height: 100vh;
+}
+
 .gradient {
 	opacity: .1;
 	position: absolute;
@@ -53,6 +57,10 @@ body {
 
 section {
 	margin-bottom: 200px;
+}
+
+.menuActiveSectionNone {
+	display: none !important;
 }
 
 header {
@@ -922,6 +930,7 @@ header .firstScreen__ICONWRAP {
 .selecter.cover .selecter-options {
     border-radius: 20px !important;
     border: 1px solid #fff !important;
+    top: 0;
 }
 
 .selecter-item.selected {
@@ -1488,8 +1497,6 @@ header .firstScreen__ICONWRAP {
 
 /* _______________________________START 7 SCREEN_____________________*/
 
-.seventhScreen {}
-
 .seventhScreen h3 {
 	font-size: 90px;
 	font-family: "montserrat";
@@ -1557,7 +1564,11 @@ header .firstScreen__ICONWRAP {
     font-weight: bold;
     color: #141414;
     height: 60px;
-}.seventhScreenInfo__form--text .contact div a {color: #141414;}
+}.seventhScreenInfo__form--text .contact div a {color: #141414;transition: .3s;}
+
+.seventhScreenInfo__form--text .contact div a:hover {
+	color: #6448f0;
+}
 .parFormMap {
     font-family: Ubuntu;
     font-weight: 500;
@@ -1993,7 +2004,6 @@ header .firstScreen__ICONWRAP {
 }
 
 .error_link_errorPage .button {
-    
 width: 35%;
 }
 
@@ -2324,16 +2334,16 @@ label.error {
 	margin: 30px 0;
 	list-style: none;
 	padding: 0;
+	overflow: hidden;
 }
 
-.tabs__caption div {
-	width: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-around;
+.slideTabs {
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	display: -ms-flex !important;
+	display: -o-flex !important;
+	display: flex !important;
+	justify-content: center;
 }
 
 .tabs__caption .active:before {
@@ -2367,6 +2377,7 @@ label.error {
     position: relative;
     cursor: pointer;
     padding: 5px;
+    width: max-content;
 }
 .tabs__content .formWrapper {
 	display: -moz-flex;
@@ -2400,13 +2411,13 @@ label.error {
 	margin-bottom: 20px;
 }.tabcontent_form .checkForm button {width: 100%;}
 
-.tabs__caption li:not(.active) {
+.tabs__caption li:not(.activeLi) {
 	cursor: pointer;
 }
-.tabs__caption li:not(.active):hover {
+.tabs__caption li:not(.activeLi):hover {
 	color: #6448f0;
 }
-.tabs__caption .active {
+.tabs__caption .activeLi {
 	color: #6448f0;
 }
 
@@ -2436,7 +2447,7 @@ label.error {
     line-height: 35px;
 }
 
-.tabs__content.active {
+.tabs__content.activeLi {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

@@ -23,6 +23,10 @@ Route::post('/services/add/{id}', "ServicesController@prices");
 Route::post('/services/promo/need', "ServicesController@promoneed");
 Route::get('/work/get/{param}', "WorkController@getAllItems");
 Route::get('/cardinvest', function(){ return view('cardinvest'); });
+Route::get('/admin', function(){ return view('admin'); });
+Route::get('/ProjectAdmin', function(){ return view('ProjectAdmin'); });
+Route::get('/AddProjectAdmin', function(){ return view('AddProjectAdmin'); });
+Route::get('/ChangeProjectAdmin', function(){ return view('ChangeProjectAdmin'); });
 Route::get('sitemap', function (){
     return view('sitemap');
 });

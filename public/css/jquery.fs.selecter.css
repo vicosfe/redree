@@ -13,7 +13,6 @@
   margin: 10px 0;
   z-index: 1;
   max-width: 30%;
-  /* background: #000; */
 }
 .selecter:focus {
   box-shadow: none;
@@ -40,7 +39,6 @@
   left: 0;
   opacity: 0;
   z-index: -1;
-  /* background: #333; */
 }
 .selecter-element,
 .selecter-element:focus {
@@ -101,12 +99,8 @@
   background-color: transparent;
   display: none;
   margin: 0;
-  /* overflow: hidden; */
   overflow-x: hidden;
-  /* padding: 10px 0; */
-  /* z-index: 50; */
   border-radius: 0 0 3px 3px;
-  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); */
 }
 .selecter-options.scroller {
   position: absolute;
@@ -125,7 +119,6 @@
 .selecter-item {
   width: 100%;
   background: transparent;
-  /* border-bottom: 1px solid #cccccc; */
   color: #fff;
   cursor: pointer;
   display: block;
@@ -174,11 +167,10 @@
 .selecter.open .selecter-selected,
 .selecter.focus .selecter-selected {
   background-color: #ffffff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .selecter.cover .selecter-options {
   border-width: 1px;
-  top: 0;
+  /*top: 0;*/
   border-radius: 20px;
 }
 .selecter.cover .selecter-options .selecter-item.first {
@@ -190,7 +182,6 @@
 }
 .selecter.bottom .selecter-options {
   top: auto;
-  bottom: 100%;
   border-width: 1px 1px 0;
 }
 .selecter.bottom .selecter-item:last-child {

@@ -17,7 +17,7 @@
 	.wrapper_ourWorks .slide {
 		width: 60%;
 	}
-	.owl-carousel .owl-item {
+	.slider_ourWorks .owl-carousel .owl-item {
 		right: 60px;
 		top: 20px;
 	}
@@ -46,6 +46,9 @@
 	}
 	.slidebg {
 		height: 21px;
+	}
+	.slider_ourWorks.owl-carousel .owl-item {
+		top: 20px;
 	}
 	.seventhScreenInfo__form button {
 		width: 100% !important;
@@ -266,7 +269,7 @@
 	.slideWrap {
 		width: 100%;
 	}
-	.owl-carousel .owl-item {
+	.slider_ourWorks .owl-carousel .owl-item {
 		padding: 20px 0;
 		transition: .5s;
 	}
@@ -704,6 +707,7 @@
 		margin: 0;
 		height: 64px;
 		position: relative;
+		overflow: visible;
 	}
 	.tabs hr {
 		bottom: -20px;
@@ -711,26 +715,20 @@
 	.tabs__content {
 		margin-top: 20px;
 	}
-	.tabs__caption div {
-		justify-content: space-between;
-		position: relative;
-		align-items: center;
-		height: 100%;
-	}
-	.tabs__caption div{
-		width: 100%;
+	
+	.slideTabs .owl-nav {
 		position: absolute;
-		left: 0;
-		opacity: 0;
-		z-index: -1;
-		transition: opacity 1s;
+		top: -50%;
+		width: 100%;
+		z-index: 1;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.slideTabs .owl-next {
+		right: 0;
 	}
 	.tabs__caption li:nth-child(even){
 		right: 0;
-	}
-	.tabs__caption div.showed{
-		opacity: 1;
-		z-index: 1;
 	}
 	.lineTabsCaption {
 		width: 150%;
@@ -777,7 +775,7 @@
 
 
 /*iphone 6*/
-@media only screen and (min-width: 325px) and (max-width: 480px) {
+@media only screen and (min-width: 350px) and (max-width: 480px) {
 	.workersWrap__item--photo {
 		height: 160px;
 	}
@@ -820,6 +818,9 @@
 	}
 	.owl-carousel .owl-item.center .slideWrap {
 		height: 320px !important;
+	}
+	.slider_ourWorks .owl-carousel .owl-item {
+		top: 20px;
 	}
 	.wrapper_ourWorks .owl-carousel .owl-item .slideWrap {
 		height: 280px;

@@ -62,7 +62,7 @@
 <section>
    <div class="wrapper_nextWork">
 		<a href="">Предыдущий проект</a>
-		<a href="index.html">Выйти</a>
+		<a href="/">Выйти</a>
 		<a href="">Слудующий проект</a>
 	</div>
 </section>

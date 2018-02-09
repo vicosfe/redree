@@ -50,13 +50,15 @@
 	</section>
 
 	<section class="ourWorks" id="ourWorks">
-		<div class="flex"><h3>Наши работы</h3> 
+		<div class="flex">
+			<h3>Наши работы</h3> 
 			<select name="govno" id="govno" class="selectWork">
 				<option value="0">Все</option>
 				<option value="1">Сайты</option>
 				<option value="2">Брендинг</option>
 				<option value="3">Приложения</option>
-			</select></div>
+			</select>
+		</div>
 		<div class="wrapper_ourWorks">
 			<div class="infoSlide">
 				<h1 id="titleWork">Инвестиционный портал<br>г.Махачкала</h1>

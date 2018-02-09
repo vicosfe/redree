@@ -1,12 +1,30 @@
 $(document).ready(function () {
 
-  $(".hamburger").click(function(){
+
+(function () {  
+
+	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 		$(".header__right ul").toggleClass("header__rightActiveUl");
 		$(".header__right").toggleClass("header__rightActive");
 		$(".firstScreen__ICONWRAP").toggleClass("firstScreen__ICONWRAPACTIVE");
 		$(".logoHeader").toggleClass("logoHeaderActive");
+		$("section, .wrapper__footer").toggleClass("menuActiveSectionNone");
+		$(".padBlock").toggleClass("menuActivePadBlock");
 	  });
+
+	  $(".header__right ul li").click(function () {
+		$(".hamburger").removeClass("is-active");
+		$(".header__right ul").removeClass("header__rightActiveUl");
+		$(".header__right").removeClass("header__rightActive");
+		$(".firstScreen__ICONWRAP").removeClass("firstScreen__ICONWRAPACTIVE");
+		$(".logoHeader").removeClass("logoHeaderActive");
+		$("section, .wrapper__footer").removeClass("menuActiveSectionNone");
+		$(".padBlock").removeClass("menuActivePadBlock");
+	  })
+})();
+
+
 
 	var firstScreenRight = $(".firstScreen__right");
 	var mainMenu = $(".mainMenu");
@@ -34,6 +52,15 @@ $(document).ready(function () {
 				},
 		},
 	});
+
+
+
+
+	// $(".slideTabs").owlCarousel({
+	// 	items: 1,
+	// 	nav: true,
+	// 	navText: ["<i class='material-icons'>&#xE314;</i>", "<i class='material-icons'>&#xE315;</i>"],
+	// });
 	
 
 	function initCarousel() {
@@ -105,13 +132,12 @@ $(document).ready(function () {
 
 				for (var i = 0; i < request.length; i++){
 
-			var image = '<div class="slideWrap" style="background: '+request[i]["background"]+' ">'
-			image +=  '<div class="slidebg">'
-			image +=             '<img src="'+request[i]["photo"]+'" alt="">';
-			image +=             '</div>'
-			image +=    '</div>'
+				var image = '<a href="   '+request[i]["url"]+'   " class="slideWrap" style="background: '+request[i]["background"]+' ">'
+				image +=  '<div class="slidebg">'
+				image +=             '<img src="'+request[i]["photo"]+'" alt="">';
+				image +=             '</div>'
+				image +=    '</a>'
 					$("#govnishko2").append(image)
-
 
 			   }
 				$("#govnishko").append('</div>').each(function () {
@@ -186,10 +212,10 @@ $(document).ready(function () {
 (function($) {
 	$(function() {
 
-		$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+		$('ul.tabs__caption').on('click', 'li:not(.activeLi)', function() {
 			$(this)
-				.addClass('active').siblings().removeClass('active')
-				.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+			.addClass('activeLi').siblings().removeClass('activeLi')
+			.closest('div.tabs').find('div.tabs__content').removeClass('activeLi').eq($(this).index()).addClass('activeLi');
 		});
 
 		var tabIndex = window.location.hash.replace('#tab','')-1;
@@ -203,14 +229,6 @@ $(document).ready(function () {
 	});
 	})(jQuery);
 
-	
-	if (window.matchMedia("(min-width: 500px)").matches) {
-	  /* the viewport is at least 400 pixels wide */
-	} else {
-		$(".tabs__caption").draggable({
-			axis: "x", 
-		});
-	}
 	
 (function(){
 
@@ -247,18 +265,6 @@ $(function (){
 					required: true,
 					email: true,
 					minlength: 13,
-				  },
-				  firma: {
-					required: true,
-					minlength: 2,
-				  },
-				  post: {
-					required: true,
-					minlength: 4,
-				  },
-				  sait: {
-					required: true,
-					minlength: 4,
 				  },
 				  phone: {
 					required: true,
